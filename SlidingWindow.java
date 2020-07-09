@@ -14,10 +14,10 @@ class Solution {
         for (int i=0; i<k; i++) 
            res += arr[i]; 
        
-        // Compute sums of remaining windows by 
-        // removing first element of previous 
-        // window and adding last element of  
-        // current window. 
+       
+        /**
+        * Slide for remaining elements and add new element to previous result and remove last element of the previous window.
+        */
         int curr_sum = res; 
         for (int i=k; i<n; i++) 
         { 
