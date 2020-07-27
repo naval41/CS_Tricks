@@ -10,6 +10,7 @@ public class RollingHash
 		int i, j; 
 		int p = 0; // hash value for pattern 
 		int t = 0; // hash value for txt 
+		int h = Math.pow(d,M-1)%q; 
 	
 		// Calculate the hash value of pattern and first 
 		// window of text 
